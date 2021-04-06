@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Database.fs" />
+    <Compile Include="ThreadedActor.fs" />
+    <Compile Include="TaskEnigine.fs" />
+    <Compile Include="HtmlHeadersTask.fs" />
+    <Compile Include="Server.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Shared\Shared.fsproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="FSharp.SystemTextJson" Version="0.16.6" />
+    <PackageReference Include="Giraffe" Version="4.1.0" />
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.32" />
+    <PackageReference Include="Saturn" Version="0.12.1" />
+    <PackageReference Include="Thoth.Json.Giraffe" Version="4.0.0" />
+    <PackageReference Include="Cronos" Version="0.7.0" />
+  </ItemGroup>
+</Project>
